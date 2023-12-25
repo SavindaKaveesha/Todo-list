@@ -1,11 +1,11 @@
-# app.py
+
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from bson import ObjectId
 
 app = Flask(__name__)
 
-# Connect to MongoDB Atlas
+
 client = MongoClient("mongodb+srv://user2:12345@cluster0.htjod7q.mongodb.net/?retryWrites=true&w=majority")
 db = client.todoapp
 
